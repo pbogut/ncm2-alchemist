@@ -37,9 +37,9 @@ options.
 
 | Variable                        | Default               |
 |:--------------------------------|:----------------------|
-| `g:ncm2_alchmist_vim_path`      | `find by runtimepath` |
+| `g:ncm2_alchemist_vim_path`      | `find by runtimepath` |
 
-- `g:ncm2_alchmist_vim_path`
+- `g:ncm2_alchemist_vim_path`
 
 Path to `alchemist.vim` plugin, if installed via `Plug` it should be
 something like `~/.config/nvim/plugged/alchemist.vim/`. This plugin will try
