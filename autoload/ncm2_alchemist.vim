@@ -30,14 +30,14 @@ func! ncm2_alchemist#on_complete(ctx)
 endfunc
 
 func! ncm2_alchemist#alchemist_vim_path()
-    if empty(get(g:, 'ncm2_alchmist_vim_path'))
+    if empty(get(g:, 'ncm2_alchemist_vim_path'))
       for l:path in split(&runtimepath, ',')
         if l:path =~ '/alchemist.vim/' && !empty(glob(l:path . "elixir_sense"))
-          let g:ncm2_alchmist_vim_path = l:path
+          let g:ncm2_alchemist_vim_path = l:path
           break
         endif
       endfor
     endif
 
-    return get(g:, 'ncm2_alchmist_vim_path')
+    return get(g:, 'ncm2_alchemist_vim_path')
 endfunc
